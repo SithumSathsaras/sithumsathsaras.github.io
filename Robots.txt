@@ -1,0 +1,20 @@
+
+# Block all crawlers for /accounts
+User-agent: *
+Disallow: /accounts
+
+# Allow all crawlers
+User-agent: *
+Allow: /
+
+
+User-agent: Twitterbot
+Disallow: *
+
+Allow: /images
+Allow: /archives
+
+Allow: /
+
+Sitemap: https://www.sithum.tk/sitemap.xml
+Sitemap: https://www.sithum.tk/site-0.xml
