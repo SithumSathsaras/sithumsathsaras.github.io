@@ -6,7 +6,7 @@
 const keyValue = 'abc';
 
 
-const actionUrl = 'http://127.0.0.1:3000/api/visitors/increment?key=abc';
+const actionUrl = 'https://apis.sithum.tk/visitors/increment?key=abc';
 const method = 'POST';
 
 // Send the request using Fetch API
@@ -17,7 +17,7 @@ fetch(actionUrl, { method })
         if (response.ok) {
             console.log('Request succeeded');
            
-
+    
             // Perform any additional actions on successful request
         } else {
             console.log('Request failed');
