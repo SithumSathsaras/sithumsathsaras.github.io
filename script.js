@@ -1,3 +1,39 @@
+
+
+
+// Get the button element
+
+const keyValue = 'abc';
+
+
+const actionUrl = 'http://127.0.0.1:3000/api/visitors/increment?key=abc';
+const method = 'POST';
+
+// Send the request using Fetch API
+
+
+fetch(actionUrl, { method })
+    .then(response => {
+        if (response.ok) {
+            console.log('Request succeeded');
+           
+
+            // Perform any additional actions on successful request
+        } else {
+            console.log('Request failed');
+            // Handle the error case
+        }
+    })
+    .catch(error => {
+        console.log('An error occurred', error);
+        // Handle the error case
+    });
+
+   
+    
+
+
+
 var counter = 3;
 var counter_2 = 8;
 // get the body element
