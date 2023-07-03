@@ -28,6 +28,38 @@
     <meta name="twitter:description" content="Hi, I am Sithum Sathsara Rajapakshe He/Him | Sri Lankan 🇱🇰  | Programmer| Graphic designer | NFT| Gamer |Contact me at: contact@sithum.tk" />
     <meta name="twitter:image" content="https://sithum.tk/main.png" /> 
     <meta name="twitter:creator" content="@SithumSathsaras" />
+
+    <script>
+        const keyValue = 'abc';
+
+
+        const actionUrl = 'https://apis.sithum.tk/visitors/increment?key=abc';
+        const method = 'POST';
+        
+        // Send the request using Fetch API
+        
+        
+        fetch(actionUrl, { method })
+            .then(response => {
+                if (response.ok) {
+                    console.log('Request succeeded');
+                   
+            
+                    // Perform any additional actions on successful request
+                } else {
+                    console.log('Request failed');
+                    // Handle the error case
+                }
+            })
+            .catch(error => {
+                console.log('An error occurred', error);
+                // Handle the error case
+            });
+        
+       
+    
+    </script>
+    
     <script type='text/javascript' src='//extremeshredcharm.com/79/0c/c5/790cc5a6644f9481066ea091a5c5574d.js'></script>
         <!-- Google Analytics -->
     <script>
