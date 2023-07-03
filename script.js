@@ -3,34 +3,7 @@
 
 // Get the button element
 
-const keyValue = 'abc';
 
-
-const actionUrl = 'https://apis.sithum.tk/visitors/increment?key=abc';
-const method = 'POST';
-
-// Send the request using Fetch API
-
-
-fetch(actionUrl, { method })
-    .then(response => {
-        if (response.ok) {
-            console.log('Request succeeded');
-           
-    
-            // Perform any additional actions on successful request
-        } else {
-            console.log('Request failed');
-            // Handle the error case
-        }
-    })
-    .catch(error => {
-        console.log('An error occurred', error);
-        // Handle the error case
-    });
-
-   
-    
 
 
 
