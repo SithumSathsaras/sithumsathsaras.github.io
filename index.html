@@ -49,30 +49,35 @@
     <!-- End Google Tag Manager -->
 
     <script>
-    type="application/ld+json"
-    dangerouslySetInnerHTML={{ __html: JSON.stringify({
-            "@context": "http://schema.org",
-            "@type": "Person",
-            address: {
-              "@type": "PostalAddress",
-              addressLocality: "Bandarawela",
-              addressRegion: "Uva",
-              postalCode: "90100",
-              streetAddress: "Bandarawela unkown"
-            },
-            colleague: [
-              "https://stcb.edu.lk/",
-              "https://itclub.stcb.edu.lk/"
-            ],
-            email: "contact@sithum.ml",
-            image: "https://sithum.tk/main.png",
-            jobTitle: "Programing Student",
-            name: "Sithum Sathsara Rajapakshe",
-            telephone: "+94 773589173",
-            url: "http://www.sithum.tk"
-          })
-       }}
-  </script>  
+      const personData = {
+        "@context": "http://schema.org",
+        "@type": "Person",
+        address: {
+          "@type": "PostalAddress",
+          addressLocality: "Bandarawela",
+          addressRegion: "Uva",
+          postalCode: "90100",
+          streetAddress: "Bandarawela unkown"
+        },
+        colleague: [
+          "https://stcb.edu.lk/",
+          "https://itclub.stcb.edu.lk/"
+        ],
+        email: "contact@sithum.ml",
+        image: "https://sithum.tk/main.png",
+        jobTitle: "Programing Student",
+        name: "Sithum Sathsara Rajapakshe",
+        telephone: "+94 773589173",
+        url: "http://www.sithum.tk"
+      };
+    </script>
+    
+    // Later in your JSX code:
+    <script>
+      type="application/ld+json"
+      dangerouslySetInnerHTML={{ __html: JSON.stringify(personData) }}
+    </script>
+
 
 </head>
 <body>
